@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Sealight</name>
+		<description>Hoo boy, it's Sealight.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/dungeon-masters-guide">LP Mills/author>
+		<update version="0.1.3">
+			<file name="sealight.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide.index" />
+		</update>
+	</info>
+	<files>
+		<file name="languages.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/source.xml" />
+	</files>
+</index>
