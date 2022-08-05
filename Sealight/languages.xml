@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.2">
+			<file name="languages.xml" url="https://github.com/DENNIS-TRUTHANOV/Sealight/blob/main/Sealight/sealight.index" />
+		</update>
+	</info>
+	<element name="Teknograshk" type="Language" source="Sealight" id="ID_SEA_TEKNOGRASHK">
+		<supports>Standard</supports>
+		<description>
+			<p>Mainly spoken by the dwarves of Teknograd.</p>
+		</description>
+		<set name="standard">true</set>
+		</setters>
+		</element>
+</elements>
