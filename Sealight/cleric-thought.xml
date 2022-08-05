@@ -8,35 +8,42 @@
 			<file name="cleric-thought" url="https://raw.githubusercontent.com/DENNIS-TRUTHANOV/Sealight/main/Sealight/cleric-thought.xml" />
 		</update>
 	</info>
-	<element name="Thought Domain" type="Archetype" source="Sealight" id="ID_SEA_THOUGHT">
+	<element name="Thought Domain" type="Archetype" source="LP Mills' SEALIGHT" id="ID_SEA_THOUGHT">
 		<supports>Divine Domain</supports>
 		<description>
 			<p>
 				The gods ask not that you think of them. Only that you think. This is the basis of worship for those who follow the teachings of the Thought domain. These clerics have honed their minds and the minds of others to impossible standards, gaining near perfect recall and a host of psionic powers in the process.	Such abilities mark clerics of this domain out from	the general populous. While other clerics stand as pillars of their communities, those who follow the Thought domain are considered detached and oftentimes menacing Do not mistake the Thought domain as an intellectual movement, a collective of	pencil-necked academics who seek knowledge for knowledge’s sake. Those who follow this path seek nothing less than apotheosis through perfect psychic control.</p>
-			<p class="indent">Those who follow the Way of Mercy might be members of a religious order, administering to the needy and making grim choices rooted in reality rather than idealism. Some might be gentle-voiced healers, beloved by their communities, while others might be masked bringers of macabre mercies.</p>
-			<p class="indent">The walkers of this way usually don robes with deep cowls, and they often conceal their faces with masks, presenting themselves as the faceless bringers of life and death.</p>
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_IMPLEMENTS_OF_MERCY" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_HAND_OF_HEALING" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_HAND_OF_HARM" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_PHYSICIANS_TOUCH" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_FLURRY_OF_HEALING_AND_HARM" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_HAND_OF_ULTIMATE_MERCY" />
+			<div element="ID_SEA_DOMAIN_FEATURES" />
+			<div element="ID_SEA_DOMAIN_SPELLS" />
+			<div element="ID_SEA_TOTAL_RECALL" />
+			<div element="ID_SEA_PSI_CON" />
+			<div element="ID_SEA_PSY_SYM" />
+			<div element="ID_SEA_EERIE_PRECISION" />
+			<div element="ID_SEA_PSY_DIS" />
+			<div element="ID_TRANS_INT" />
+			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_GRAVE_DOMAIN_DOMAIN_SPELLS" />
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_IMPLEMENTS_OF_MERCY" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_HAND_OF_HEALING" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_HAND_OF_HARM" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_PHYSICIANS_TOUCH" level="6" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_FLURRY_OF_HEALING_AND_HARM" level="11" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_HAND_OF_ULTIMATE_MERCY" level="17" />
-		</rules>
+			<grant type="Archetype Feature" id="ID_SEA_DOMAIN_FEATURES" level="1" />
+			<grant type="Archetype Feature" id="ID_SEA_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_SEA_TOTAL_RECALL" level="1" />
+			<grant type="Archetype Feature" id="ID_SEA_PSI_CON" level="1" />
+			<grant type="Archetype Feature" id="ID_SEA_PSY_SYM" level="2" />
+			<grant type="Archetype Feature" id="ID_SEA_EERIE_PRECISION" level="6" />
+			<grant type="Archetype Feature" id="ID_SEA_PSY_DIS" level="8" />
+			<grant type="Archetype Feature" id="ID_TRANS_INT" level="17" />
+			</rules>
 	</element>
-	<element name="Domain Spells" type="Archetype Feature" source="Sealight" id="ID_SEA_DOMAIN_SPELLS">
-		<description>
-			<p>You gain domain spells at the cleric levels listed in the Grave Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
-			<h5>Grave Domain Spells</h5>
-			<table>
+	
+		
+		<element name="Domain Spells" type="Archetype Feature" source="Sealight" id="ID_SEA_DOMAIN_FEATURES">
+		<sheet display="true">
+			<description>
+			<p>You gain domain spells at the cleric levels listed in the Grave Domain Spells table. See the Divine Domain class feature for how domain spells work.</p></description>
+			<description><h5>Grave Domain Spells</h5> </description>
+			<description>
+				<table>
 				<thead>
 					<tr>
 						<td>Cleric Level</td>
@@ -46,7 +53,7 @@
 				<tr>
 					<td>1st</td>
 					<td>
-						<em>Domain Spells, Total Recall, Psionic Potntial</em>
+						<em>Domain Spells, Total Recall, Psionic Potential</em>
 					</td>
 				</tr>
 				<tr>
@@ -75,99 +82,190 @@
 				</tr>
 			</table>
 		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BANE" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Cleric" prepared="true" />
-		</rules>
-	</element>
-	<element name="Implements of Mercy" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_IMPLEMENTS_OF_MERCY">
+		</sheet>
+			<rules>
+				<grant type="Spell" id="ID_SEA_SPELL_FASCINATE" level="1" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_SEA_SPELL_INFURIATE" level="1" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_SEA_SPELL_MIND_VIRUS" level="3" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
+				<grant type="Spell" id="ID_SEA_SPELL_MIGRAINE" level="1" spellcasting="Cleric" prepared="true" />
+			</rules>
+		</element>
+	
+	<element name="Thought Domain Features" type="Archetype Feature" source="Sealight" id="ID_SEA_DOMAIN_FEATURES">
 		<description>
-			<p><em>3rd-level Way of Mercy feature</em></p>
-			<p>You gain proficiency in the Insight and Medicine skills, and you gain proficiency with the herbalism kit.</p>
-			<p class="indent">You also gain a special mask, which you often wear when using the feature of this subclass. You determine its appearance, or generate it randomly by rolling on the Merciful Mask table.</p>
-			<h5 class="caption">Merciful Mask</h5>
 			<table>
 				<thead>
-					<tr><td>d6</td><td>Mask Appearance</td></tr>
+					<tr>
+						<td>Cleric Level</td>
+						<td>Spells</td>
+					</tr>
 				</thead>
-				<tr><td>1</td><td>Raven</td></tr>
-				<tr><td>2</td><td>Blank and white</td></tr>
-				<tr><td>3</td><td>Crying visage</td></tr>
-				<tr><td>4</td><td>Laughing visage</td></tr>
-				<tr><td>5</td><td>Skull</td></tr>
-				<tr><td>6</td><td>Butterfly</td></tr>
+				<tr>
+					<td>1st</td>
+					<td>
+						<em>Domain Spells, Total Recall, Psionic Potential</em>
+					</td>
+				</tr>
+				<tr>
+					<td>2nd</td>
+					<td>
+						<em>Channel Divinity: Psychic Symbiote</em>
+					</td>
+				</tr>
+				<tr>
+					<td>6th</td>
+					<td>
+						<em>Eerie Precision</em>
+					</td>
+				</tr>
+				<tr>
+					<td>8th</td>
+					<td>
+						<em>Psychic Disruption</em>
+					</td>
+				</tr>
+				<tr>
+					<td>17th</td>
+					<td>
+						<em>Transcendent Intellect</em>
+					</td>
+				</tr>
 			</table>
 		</description>
-		<sheet display="false">
-			<description>You gain a special mask, which you often wear when using the feature of this subclass.</description>
-		</sheet>
+	</element>
+	
+	<element name="Thought Domain Spells" type="Archetype Feature" source="Sealight" id="ID_SEA_DOMAIN_SPELLS">
+				<description>
+			<table>
+				<thead>
+					<tr>
+						<td>Cleric Level</td>
+						<td>Spells</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>1st</td>
+					<td>
+						<em>
+							Fascinate, Infuriate
+						</em>
+					</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>
+						<em>Detect Thoughts, Mind Virus
+					</em>
+					</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>
+						<em>Fear, Hypnotic Pattern</em>
+					</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>
+						<em>Confusion, Phantasmal Killer</em>
+					</td>
+				</tr>
+				<tr>
+					<td>17th</td>
+					<td>
+						<em>Dominate Person, Modify Memory</em>
+					</td>
+				</tr>
+			</table>
+		</description>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
-		</rules>
-	</element>
-	<element name="Hand of Healing" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_HAND_OF_HEALING">
+			<grant type="Spell" id="ID_SEA_SPELL_FASCINATE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_SEA_SPELL_INFURIATE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_SEA_SPELL_MIND_VIRUS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_SEA_SPELL_MIGRAINE" level="1" spellcasting="Cleric" prepared="true" />
+		
+			</rules>
+		</element>
+	
+	<element name="Total Recall" type="Archetype Feature" source="Sealight" id="ID_SEA_TOTAL_RECALL">
 		<description>
-			<p><em>3rd-level Way of Mercy feature</em></p>
-			<p>Your mystical touch can mend wounds. As an action you can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of your Martial Arts die + your Wisdom modifier.</p>
-			<p class="indent">When you use your Flurry of Blows, you can replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.</p>
+				<p>	Beginning at 1st level, you know a variety of mnemonic devices to trigger your brain’s near mechanical precision. If you spend at least one minute performing a chant, ritual, or prayer, you may give yourself advantage on History, Arcana, and Perception checks for the next ten minutes. You may do this a number of times equal to your Intelligence modifier.</p>
 		</description>
-		<sheet action="Action">
-			<description>You can spend 1 ki point to touch a creature and restore 1d{{martial arts:dice}} + {{wisdom:modifier}} hp. 
-			When you use your Flurry of Blows, you can replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.</description>
+		<sheet display="true">
+			<description>
+				Beginning at 1st level, you know a variety of mnemonic devices to trigger your brain’s near mechanical precision. If you spend at least one minute performing a chant, ritual, or prayer, you may give yourself advantage on History, Arcana, and Perception checks for the next ten minutes. You may do this a number of times equal to your Intelligence modifier.
+			</description>
 		</sheet>
 	</element>
-	<element name="Hand of Harm" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_HAND_OF_HARM">
+	<element name="Psionic Conduit" type="Archetype Feature" source="Sealight" id="ID_SEA_PSI_CON">
 		<description>
-			<p><em>3rd-level Way of Mercy feature</em></p>
-			<p>You use your ki to inflict wounds. When you hit a creature with an unarmed strike, you can spend 1 ki point to deal extra necrotic damage equal to one roll of your Martial Arts die + your Wisdom modifier. You can use this feature only once per turn.</p>
+			<p>	Also at 1st level, your knowledge of the living mind allows you to unlock its hidden potential. As a bonus action, you may use the mind of one willing creature within 30 feet of you as your holy symbol, so long as the creature has an Intelligence score of 7 or higher. This creature becomes your Conduit, and as long as they are being used in this manner, you have access to the migraine cantrip. Additionally, you are able to communicate telepathically with your Conduit as a bonus action on your turns. This connection is broken if the Conduit is reduced to 0 Hit Points or moves more than 60 feet away from you. Once the connection is broken, you must spend a bonus action reestablishing it.
+			</p>
 		</description>
-		<sheet usage="1/Turn">
-			<description>When you hit a creature with an unarmed strike, you can spend 1 ki point to deal 1d{{martial arts:dice}} + {{wisdom:modifier}} extra necrotic damage.</description>
+		<sheet display="true">
+			<description>
+				Also at 1st level, your knowledge of the living mind allows you to unlock its hidden potential. As a bonus action, you may use the mind of one willing creature within 30 feet of you as your holy symbol, so long as the creature has an Intelligence score of 7 or higher. This creature becomes your Conduit, and as long as they are being used in this manner, you have access to the migraine cantrip. Additionally, you are able to communicate telepathically with your Conduit as a bonus action on your turns. This connection is broken if the Conduit is reduced to 0 Hit Points or moves more than 60 feet away from you. Once the connection is broken, you must spend a bonus action reestablishing it.
+			</description>
 		</sheet>
 	</element>
-	<element name="Physician’s Touch" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_PHYSICIANS_TOUCH">
+	
+	<element name="Channel Divinity: Psychic Symbiote" type="Archetype Feature" source="Sealight" id="ID_SEA_PSY_SYM">
 		<description>
-			<p><em>6th-level Way of Mercy feature</em></p>
-			<p>You can administer even greater cures with a touch, and if you feel it’s necessary, you can use your knowledge to cause harm.</p>
-			<p class="indent">When you use Hand of Healing on a creature, you can also end one disease or one of the following conditions affecting the creature: blinded, deafened, paralyzed, poisoned, or stunned.</p>
-			<p class="indent">When you use Hand of Harm on a creature, you can subject that creature to the poisoned condition until the end of your next turn.</p>
+			<p>
+				Starting at 2nd level, you can use your Channel	Divinity to weaponize the minds of your allies. As an action, you access the mind your Conduit. For one minute, both you and your Conduit have advantage on	all Wisdom and Charisma saving throws. Additionally, any hostile creature that begins its turn within 10 feet of either you or your Conduit must succeed on a Constitution saving throw or take 1d10 psychic damage.	</p>
 		</description>
-		<sheet>
-			<description>When you use Hand of Healing on a creature, you can also end one disease or one of the following conditions affecting the creature: blinded, deafened, paralyzed, poisoned, or stunned. 
-			When you use Hand of Harm on a creature, you can subject that creature to the poisoned condition until the end of your next turn.</description>
+		<sheet display="true">
+			<description>
+				Starting at 2nd level, you can use your Channel	Divinity to weaponize the minds of your allies. As an action, you access the mind your Conduit. For one minute, both you and your Conduit have advantage on	all Wisdom and Charisma saving throws. Additionally, any hostile creature that begins its turn within 10 feet of either you or your Conduit must succeed on a Constitution saving throw or take 1d10 psychic damage.
+			</description>
 		</sheet>
 	</element>
-	<element name="Flurry of Healing and Harm" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_FLURRY_OF_HEALING_AND_HARM">
+	
+	<element name="Eerie Precision" type="Archetype Feature" source="Sealight" id="ID_SEA_EERIE_PRECISION">
 		<description>
-			<p><em>11th-level Way of Mercy feature</em></p>
-			<p>You can now mete out a flurry of comfort and hurt. When you use Flurry of Blows, you can now replace each of the unarmed strikes with a use of your Hand of Healing without spending ki points for the healing.</p>
-			<p class="indent">In addition, when you make an unarmed strike with Flurry of Blows, you can use Hand of Harm with that strike without spending the ki point for Hand of Harm. You can still use Hand of Harm only once per turn.</p>
+			<p>
+				Starting at 6th level, your enhanced psychic perception allows you to target and destroy specific parts of your foes’ ego. Before you make a spell attack that deals psychic damage, you can choose to take a -5 penalty to the attack roll If the attack hits, you add +10 to the attack’s damage. You can do this a number of times equal to your Wisdom modifier. You regain all expended uses of this feature after a long rest.</p>
 		</description>
-		<sheet>
-			<description>When you use Flurry of Blows, you can now replace each of the unarmed strikes with a use of your Hand of Healing without spending ki points for the healing. 
-			When you make an unarmed strike with Flurry of Blows, you can use Hand of Harm with that strike without spending the ki point for Hand of Harm. You can still use Hand of Harm only once per turn.</description>
+		<sheet display="true">
+			<description>
+				Starting at 6th level, your enhanced psychic perception allows you to target and destroy specific parts of your foes’ ego. Before you make a spell attack that deals psychic damage, you can choose to take a -5 penalty to the attack roll If the attack hits, you add +10 to the attack’s damage. You can do this a number of times equal to your Wisdom modifier. You regain all expended uses of this feature after a long rest.
+			</description>
 		</sheet>
 	</element>
-	<element name="Hand of Ultimate Mercy" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_WAY_OF_MERCY_HAND_OF_ULTIMATE_MERCY">
+	
+	<element name="Psychic Disruption" type="Archetype Feature" source="Sealight" id="ID_SEA_PSY_DIS">
 		<description>
-			<p><em>17th-level Way of Mercy feature</em></p>
-			<p>Your mastery of life energy opens the door to the ultimate mercy. As an action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 ki points. The creature then returns to life, regaining a number of hit points equal to 4d10 + you Wisdom modifier. If the creature died while subject to any of the following conditions, it revives with them removed: blinded, deafened, paralyzed, poisoned, and stunned.</p>
-			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+			<p>	By 8th level, your psionic powers are such that you emit a constant psychic ambience that can be uncomfortable to be near. When a creature within 10 feet of you has to make a Wisdom saving throw, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the roll. Additionally, if the spell or effect that caused the Wisdom saving throw is created by a spell you cast, you	can also choose to deal an additional 1d8 psychic damage to the target, immediately before the target makes its saving throw. Once you use this feature, you cannot use it again until you finish a long or short rest.</p>
 		</description>
-		<sheet action="Action" usage="1/Long Rest">
-			<description>You can touch the corpse of a creature that died within the past 24 hours and expend 5 ki points. The creature then returns to life, regaining 4d10 + {{wisdom:modifier}} hp. If the creature died while subject to any of the following conditions, it revives with them removed: blinded, deafened, paralyzed, poisoned, and stunned.</description>
+		<sheet display="true">
+			<description>
+				By 8th level, your psionic powers are such that you emit a constant psychic ambience that can be uncomfortable to be near. When a creature within 10 feet of you has to make a Wisdom saving throw, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the roll. Additionally, if the spell or effect that caused the Wisdom saving throw is created by a spell you cast, you	can also choose to deal an additional 1d8 psychic damage to the target, immediately before the target makes its saving throw. Once you use this feature, you cannot use it again until you finish a long or short rest.
+			</description>
 		</sheet>
-	</element>	
-  
+	</element>
+	
+	<element name="Transcendental Intellect" type="Archetype Feature" source="Sealight" id="ID_TRANS_INT">
+		<description>
+			<p>	By 17th level, you have gained total control over both mind and body. You can now hover up to 20 feet above the ground, and have advantage on saving throws that would cause you to gain exhaustion on a failed save. Additionally, you are now able to maintain up to two Conduits at a time When you are connected to two Conduits, you gain the ability to cast <em>migraine</em> as a bonus action on your turn on any creature within range of one	of your Conduits.</p>
+		</description>
+		<sheet display="true">
+			<description>
+				By 17th level, you have gained total control over both mind and body. You can now hover up to 20 feet above the ground, and have advantage on saving throws that would cause you to gain exhaustion on a failed save. Additionally, you are now able to maintain up to two Conduits at a time When you are connected to two Conduits, you gain the ability to cast <em>migraine</em> as a bonus action on your turn on any creature within range of one	of your Conduits
+			</description>
+		</sheet>
+	</element> 
 </elements>
