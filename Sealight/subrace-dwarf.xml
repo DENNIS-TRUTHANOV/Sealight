@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kaladesh Dwarf</name>
+		<description>Dwarf Variant from Plane Shift: kaladesh.</description>
+		<author url="https://media.wizards.com/2017/downloads/magic/Plane-Shift_Kaladesh.pdf">Wizards of the Coast</author>
+		<update version="0.0.2">
+			<file name="subrace-dwarf.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/unearthed-arcana/planeshift/kaladesh/subrace-dwarf.xml" />
+		</update>
+	</info>
+
+	<!-- Kaladesh Dwarf -->
+	<element name="Kaladesh Dwarf" type="Sub Race" source="Plane Shift: Kaladesh" id="ID_WOTC_PSK_SUBRACE_KALADESH_DWARF">
+		<supports>Dwarf</supports>
+		<description>
+			<p>To the artisans of Kaladesh, a device’s beauty is almost as important as its function. Different artists, though, have different definitions of beauty, and to most dwarves, the highest mark of beauty is quality. Nothing is more exquisite than a machine that endures—one that functions perfectly, with a minimum of maintenance, despite the passage of years. </p>
+			<p class="indent">Dwarves don’t understand laziness or shortcuts. Just as a machine must function smoothly at all times, so too an artisan should work steadily and with care. Dwarves take pride in their work ethic, and abhor any attitude or behavior that would undermine the quality of their work. They are more thorough than speedy, and although a dwarf’s work might take longer to complete, its quality makes the time worthwhile. If a job must be done, a dwarf will see that it is done correctly. And when a dwarf repairs a machine, it will work as well as it did when it was first built, if not better—and it will last.</p>
+			<p class="indent">Among the folk of other races, dwarves have a reputation for being utterly fearless. This is largely because their work often finds them scaling tall buildings or hanging from the undersides of airships. Far from being reckless, though, dwarves enter any potentially dangerous situation with firm safeguards in place, thoroughly prepared to avoid any accident. With an unshakable trust in the quality of harnesses, scaffolding, and handiwork, a dwarf has no need to fear falling.  </p>
+			<h4>DWARF POLITICS</h4>
+			<p>Dwarves gravitate to where the work is. Accordingly, many dwarves appreciate the Consulate as an inexhaustible source of work opportunities. For its part, the Consulate values dwarves for their painstaking, perfectionist approach to building and maintenance. As a result, dwarves are employed at every level of the Consulate government, including having representatives among the Enlightened Keepers, the consuls themselves. Dwarf edificers keep the machinery of the cities running smoothly, while dwarf enforcers protect property and help keep the peace. However, it is the potential for making great things, more so than any philosophical leaning, that ties most dwarves to the Consulate.</p>
+			<p class="indent">Dwarves are not typically drawn to politics, but some do take issue with what they see as slapdash construction carried out in the Consulate’s foundries. Mass production on the scale of the Consulate’s efforts is an affront to the ideals of true artisanship, they argue, and those who are most offended by this insult sometimes align themselves with renegade groups.</p>
+			<h4>KALADESH DWARF TRAITS</h4>
+			<p>Your dwarf character has an assortment of inborn abili-ties, part and parcel of dwarven nature:</p>
+			<p>
+				<span class="feature">Ability Score Increase. </span>Your Wisdom score increases by 1.<br />
+				<span class="feature">Artisan’s Expertise.</span>You lose your combat training but gain proficiency with two kinds of artisan’s tools of your choice. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. In addition, whenever you make an Intelligence (History) check related to the origin of any architectural construction (including buildings, public works such as canals and aqueducts, and the massive cogwork that underlies much of the construction of Ghirapur), you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.<br />
+				<span class="feature">Dwarven Toughness. </span>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.  <br />
+			</p>
+		</description>
+		<sheet alt="Dwarf" display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DWARVEN_TOUGHNESS" />
+			<grant type="Racial Trait" id="ID_WOTC_PSK_RACIAL_TRAIT_ARTISANS_EXPERTISE" />
+		</rules>
+	</element>
+
+	<element name="Teknograd Dwarf" type="Sub Race" source="LP Mills' SEALIGHT" id="ID_SEA_TEK">
+		<supports>Dwarf</supports>
+		<description>
+			<p>
+				The subterranean citadel of Teknograd is a wonder to behold. This inverted cathedral of stone and steel, held aloft by technomagical marvels the likes of which are seldom seen, has been the home of Sealight’s dwarven
+				population since before the Calamity.
+				Forced
+				out by growing populations of deadly monsters
+				in the caverns surrounding their chthonic city, the dwarves
+				of Teknograd are reluctantly reintegrating with a surface
+				they abandoned long ago. Possessing a wealth of
+				incredible inventions that blur the lines between science
+				and magic, the Teknograd dwarves have swiftly ingratiated
+				themselves through their work on improving modern
+				airships and automata.
+			</p>
+				<p>
+					<h4>Brilliant Buoyancy</h4>
+				</p>
+			<p>
+				In
+				spite of their dour appearance and harsh ways of
+				speaking, the dwarves of Teknograd are an
+				overwhelmingly positive and charismatic people. Young
+				dwarves are socialised from a young age to value
+				optimism, believing that a cheerful attitude is the best way
+				to guarantee one’s inventions will, in fact, work.
+			</p>
+			<p>
+				<h4>Born Iconoclasts</h4>
+			</p>
+			<p>
+				In
+				the wake of the Calamity, the dwarves of Teknograd
+				decided that they had been abandoned by the gods. Never
+				one to let a slight go unpunished, the dwarves decided to
+				abandon their gods right back, and created the Spear of
+				Silvered Reason, an atheistic state religion venerated to a
+				hypothetical entity of pure, crystalised logic: <b>LOGIKA.</b>
+			</p>
+				
+
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score
+				increases by 2 and your Charisma score increases by 1.
+			</p>
+			<p class="indent"><strong><em>Age.</em></strong> Teknograd dwarves reach maturity in their late
+				50s, and often live for around 450 years.
+			</p>
+			<p class="indent"><strong><em>Temperament.</em></strong> The dwarves of Teknograd are
+				boisterous, playful, adventurous, and brilliant Valuing
+				intelligence and community in equal measure, these
+				dwarves approach everything from complex mathematics
+				to mindless drinking competitions with the same
+				cheerful zeal.
+			</p>
+			<p class="indent"><strong><em>Size.</em></strong> Teknograd dwarves stand a little shorter than their
+				ancient mountainous ancestors, seldom reaching 5 feet in
+				height. Your size class is Medium.
+			</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.
+			</p>
+			<p class="indent"><strong><em>Superior Darkvision.</em></strong> You can see in dim light within
+				120 feet of you as if it were bright light, and in darkness as
+				if it were dim light. You can't discern color in darkness,
+				only shades of gray.
+			</p>
+			<p class="indent"><strong><em>Skeptic.</em></strong> You can cast <i>protection from evil and good</i>
+				targeting only yourself and requiring no material
+				components. Once you do so, you can’t cast it in this way
+				again until you finish a long rest. Intelligence is your
+				spellcasting ability for this feature.</p>
+			<p class="indent"><strong><em>Mechanically-Minded.</em></strong> Whenever you make a History
+				check to discern the origin or make of a piece of
+				machinery, you are considered proficient in the History
+				skill and add double your proficiency bonus to the check,
+				instead of your normal proficiency bonus.
+			</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can read, speak, and write Common,
+				Undercommon, and Teknograshk.
+						</p>      
+			<div class="reference">
+				<div element="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+			</div> 
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Aasimar)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Aasimar)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_SEA_TEKNOGRASHK" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_WOTC_DMG_RACIAL_TRAIT_TEKNOGRAD_SUPE_DARK" />
+			<grant type="Racial Trait" id="ID_SEA_SKEPTIC" />
+			<grant type="Racial Trait" id="ID_SEA_MECH_MIND" />
+			</rules>
+	</element>
+
+	<element name="Superior Darkvision" type="Racial Trait" source="Sealight" id="ID_WOTC_DMG_RACIAL_TRAIT_TEKNOGRAD_SUP_DARK">
+		<description>
+			<p>
+				You can see in dim light within	120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+
+	<element name="Superior Darkvision" type="Racial Trait" source="Sealight" id="ID_WOTC_DMG_RACIAL_TRAIT_TEKNOGRAD_SUPE_DARK">
+		<description>
+			<p>
+				You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+			</p>
+
+		</description>
+		<sheet>
+			<description>
+				You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+			</description>
+			<description level="3">
+				You can see in dim light within	120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+			</description>
+			<description level="5">
+				You can see in dim light within	120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+			</description>
+		</sheet>
+	</element>
+	<element name="Skeptic" type="Racial Trait" source="Sealight" id="ID_SEA_SKEPTIC">
+		<description>
+			<p>
+				You can cast <i>protection from evil and good</i> targeting only yourself and requiring no material components. Once you do so, you can’t cast it in this way again until you finish a long rest. Intelligence is your spellcasting ability for this feature.
+			</p>
+
+		</description>
+		<sheet>
+			<description>
+				You can cast <i>protection from evil and good</i> targeting only yourself and requiring no material components. Once you do so, you can’t cast it in this way again until you finish a long rest. Intelligence is your spellcasting ability for this feature.
+			</description>
+			<description level="3">
+				You can cast <i>protection from evil and good</i> targeting only yourself and requiring no material components. Once you do so, you can’t cast it in this way again until you finish a long rest. Intelligence is your spellcasting ability for this feature.
+			</description>
+			<description level="5">
+				You can cast <i>protection from evil and good</i> targeting only yourself and requiring no material components. Once you do so, you can’t cast it in this way again until you finish a long rest. Intelligence is your spellcasting ability for this feature.
+			</description>
+		</sheet>
+	</element>
+		
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+		</rules>
+			<element name="Mechanically-Minded" type="Racial Trait" source="Sealight" id="ID_SEA_MECH_MIND">
+				<description>
+					<p>
+						Whenever you make a History check to discern the origin or make of a piece of machinery, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.
+					</p>
+
+				</description>
+				<sheet>
+					<description>
+						Whenever you make a History check to discern the origin or make of a piece of machinery, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.
+					</description>
+					<description level="3">
+						Whenever you make a History check to discern the origin or make of a piece of machinery, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.
+					</description>
+					<description level="5">
+						Whenever you make a History check to discern the origin or make of a piece of machinery, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.
+					</description>
+				</sheet>
+			</element>
+
+	<element name="Artisan’s Expertise" type="Racial Trait" source="Plane Shift: Kaladesh" id="ID_WOTC_PSK_RACIAL_TRAIT_ARTISANS_EXPERTISE">
+		<description>
+			<p>You gain proficiency with two kinds of artisan’s tools of your choice. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. In addition, whenever you make an Intelligence (History) check related to the origin of any architectural construction (including buildings, public works such as canals and aqueducts, and the massive cogwork that underlies much of the construction of Ghirapur), you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You gain double proficiency (+{{artisans-expertise:proficiency}}) for any checks made with your two chosen Artisan’s Tools. Also a +{{artisans-expertise:check}} to Intelligence (History) check related to origin of any architectural construction.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Artisan’s Expertise" supports="Artisan tools" number="2" />
+			<stat name="artisans-expertise:proficiency" value="proficiency" />
+			<stat name="artisans-expertise:proficiency" value="proficiency" />
+			<stat name="artisans-expertise:check" value="intelligence:modifier" />
+			<stat name="artisans-expertise:check" value="history:misc" />
+			<stat name="artisans-expertise:check" value="proficiency" />
+			<stat name="artisans-expertise:check" value="proficiency" />
+		</rules>
+	</element>
+</elements>
