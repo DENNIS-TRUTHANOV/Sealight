@@ -9,5 +9,8 @@
 	</info>
 	<files>
 		<file name="languages.xml" url="https://raw.githubusercontent.com/DENNIS-TRUTHANOV/Sealight/main/Sealight/languages.xml" />
+		<file name="fighter-magehunter.xml" url="https://raw.githubusercontent.com/DENNIS-TRUTHANOV/Sealight/main/Sealight/fighter-magehunter.xml />
+		<file name="fighter-magehunter.xml" url="https://raw.githubusercontent.com/DENNIS-TRUTHANOV/Sealight/main/Sealight/cleric-thought.xml />
+		
 	</files>
 </index>
