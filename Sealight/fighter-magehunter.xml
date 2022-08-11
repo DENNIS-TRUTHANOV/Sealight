@@ -11,14 +11,8 @@
 	<element name="Mage Hunter" type="Archetype" source="Sealight" id="ID_SEA_MAGEHUNTER">
 		<supports>Martial Archetype</supports>
 		<description>
-			<p>While magic is common in Sealight, it is not universal To your average citizen, few things are more frightening than a maniac wielding a fireball, or a necromancer defiling graves and communing with the departed This is where the Monterosso Mage Hunter’s Guild comes in hailing from Blackrock, the Mage
-Hunters are a collective of wandering mercenaries
-who specialize in locating and neutralizing rogue
-spellcasters Viewing spellcasters as cowardly and
-unnatural, Mage Hunters memorize simple defensive
-spells that allow them to close in on their targets,
-disabling any active magic before plunging their
-weapons into the magician’s squishy, craven heart			</p>
+			<p>While magic is common in Sealight, it is not universal. To your average citizen, few things are more frightening than a maniac wielding a fireball, or a necromancer defiling graves and communing with 
+the departed. This is where the Monterosso Mage Hunter’s Guild comes in: hailing from Blackrock, the Mage Hunters are a collective of wandering mercenaries who specialize in locating and neutralizing rogue spellcasters. Viewing spellcasters as cowardly and unnatural, Mage Hunters memorize simple defensive spells that allow them to close in on their targets, disabling any active magic before plunging their weapons into the magician’s squishy, craven heart.</p>
 			<div element="ID_SEA_MAGEHUNTER_FEATURES" />
 			<div element="ID_SEA_MAGEHUNTER_SPELLCASTING" />
 			<div element="ID_SEA_MAGEHUNTER_SPELLCASTING_SUB" />
@@ -30,33 +24,30 @@ weapons into the magician’s squishy, craven heart			</p>
 			<div element="ID_SEA_MAGEHUNTER_KEENEYE" />
 			<div element="ID_SEA_MAGEHUNTER_OBSTINATE" />
 			<div element="ID_SEA_MAGEHUNTER_PLAYINGFIELD" />
+			
 		    
 		</description>
-		<sheet display="false" />
+		
+			<description>IDFKA</description>
+		
 		<rules>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING_SUB" level="3" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_TRICKS" level="3" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_REFLEXES" level="7" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_KEENEYE" level="10" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_OBSTINATE" level="15" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_PLAYINGFIELD" level="18" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_CANTRIPS" level="1" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLS" level="11" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING_ABILITY" level="1" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING" level="1" />
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_FEATURES" level="1" />
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_FEATURES" level="3"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING" level="3"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING_SUB" level="7"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_CANTRIPS" level="10"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLS" level="15"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_TRICKS" level="18"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_REFLEXES" level="18"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_KEENEYE" level="18"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_OBSTINATE" level="18"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_PLAYINGFIELD" level="18"/>			
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING_ABILITY" level="18"/>
 		</rules>
-	</element>
+		</element>
 
 
 	<element name="Mage Hunter Features" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_FEATURES">
-		<sheet display="true">
-			<description>
-				
-			</description>
-			<description>
-				<h5>Mage Hunter Features</h5>
-			</description>
+		<sheet display ="false" />
 			<description>
 				<table>
 					<thead>
@@ -97,198 +88,333 @@ weapons into the magician’s squishy, craven heart			</p>
 					</tr>
 				</table>
 			</description>
+		
+	</element>
+
+	<element name="Mage Hunter Spellcasting" type="Archetype Feature" source="POHEAD" id="ID_SEA_MAGEHUNTER_SPELLCASTING">
+		<sheet display ="false" />
+			<description>
+				<table class="class-features">
+					<thead>
+						<tr>
+							<td class="col-10">Fighter Level</td>
+							<td class="col-10">Cantrips Known</td>
+							<td class="col-10">Spells Known</td>
+							<td>1st</td>
+							<td>2nd</td>
+							<td>3rd</td>
+
+						</tr>
+					</thead>
+					<tr>
+						<td> 3rd</td>
+						<td>2</td>
+						<td> 2</td>
+						<td>2</td>
+						<td>—</td>
+						<td>—</td>
+
+					</tr>
+					<tr>
+						<td> 4th</td>
+						<td>2</td>
+						<td> 3</td>
+						<td>2</td>
+						<td>—</td>
+						<td>—</td>
+
+					</tr>
+					<tr>
+						<td> 5th</td>
+						<td>2</td>
+						<td> 3</td>
+						<td>2</td>
+						<td>—</td>
+						<td>—</td>
+
+					</tr>
+					<tr>
+						<td> 6th</td>
+						<td>2</td>
+						<td> 3</td>
+						<td>2</td>
+						<td>—</td>
+						<td>—</td>
+
+					</tr>
+					<tr>
+						<td> 7th</td>
+						<td>2</td>
+						<td> 4</td>
+						<td>2</td>
+						<td>2</td>
+						<td>—</td>
+
+					</tr>
+					<tr>
+						<td> 8th</td>
+						<td>2</td>
+						<td> 5</td>
+						<td>3</td>
+						<td>2</td>
+						<td>—</td>
+
+					</tr>
+					<tr>
+						<td> 9th</td>
+						<td>2</td>
+						<td> 5</td>
+						<td>3</td>
+						<td>2</td>
+						<td>—</td>
+
+
+					</tr>
+					<tr>
+						<td>10th</td>
+						<td>3</td>
+						<td> 6</td>
+						<td>3</td>
+						<td>3</td>
+						<td>—</td>
+
+					</tr>
+					<tr>
+						<td>11th</td>
+						<td>3</td>
+						<td> 7</td>
+						<td>3</td>
+						<td>3</td>
+						<td>—</td>
+
+					</tr>
+					<tr>
+						<td>12th</td>
+						<td>3</td>
+						<td> 7</td>
+						<td>3</td>
+						<td>3</td>
+						<td>—</td>
+
+					</tr>
+					<tr>
+						<td>13th</td>
+						<td>3</td>
+						<td> 8</td>
+						<td>3</td>
+						<td>3</td>
+						<td>2</td>
+
+					</tr>
+					<tr>
+						<td>14th</td>
+						<td>3</td>
+						<td>9</td>
+						<td>3</td>
+						<td>3</td>
+						<td>2</td>
+
+					</tr>
+					<tr>
+						<td>15th</td>
+						<td>3</td>
+						<td>9</td>
+						<td>4</td>
+						<td>3</td>
+						<td>2</td>
+
+					</tr>
+					<tr>
+						<td>16th</td>
+						<td>3</td>
+						<td>10</td>
+						<td>4</td>
+						<td>3</td>
+						<td>3</td>
+
+					</tr>
+					<tr>
+						<td>17th</td>
+						<td>3</td>
+						<td>10</td>
+						<td>4</td>
+						<td>3</td>
+						<td>3</td>
+
+					</tr>
+					<tr>
+						<td>18th</td>
+						<td>3</td>
+						<td>11</td>
+						<td>4</td>
+						<td>3</td>
+						<td>3</td>
+
+					</tr>
+					<tr>
+						<td>19th</td>
+						<td>3</td>
+						<td>11</td>
+						<td>5</td>
+						<td>3</td>
+						<td>3</td>
+
+					</tr>
+					<tr>
+						<td>20th</td>
+						<td>3</td>
+						<td>12</td>
+						<td>5</td>
+						<td>4</td>
+						<td>3</td>
+
+					</tr>
+				</table>
+			</description>
+		
+	</element>
+
+	
+		<element name="Spellcasting" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_SPELLCASTING_SUB">
+			<sheet display="false" />
+			<description>
+				<p>When you reach 3rd level, you augment your mage hunting with the ability to cast defensive spells.</p>
+			</description>			
+		</element>
+	
+	<element name="Cantrips" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_CANTRIPS">
+		<description>You learn two cantrips of your choice from the wizard spell list. You learn an additional cantrip of your choice at 10th level.</description>
+		<sheet display="false" />
+			<description>
+				<p>You learn two cantrips of your choice from the wizard spell list. You learn an additional cantrip of your choice at 10th level.</p>
+			</description>
+		
+	</element>
+	<element name="Spells Known of 1st Level and Higher" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_SPELLS">
+		<sheet display="false" />
+			<description>
+				<p>
+					You know two 1st-level wizard spells of your choice. These spells must be from the abjuration school of magic. The Spells Known column of the Mage Hunter Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.
+					The spells you learn at 8th, 14th, and 20th level can come from either the abjuration, evocation, or transmutation schools of magic.
+					Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from the evocation or transmutation schools.
+				</p>
+			</description>
+	
+		
+		
+		
+	</element>
+
+	<element name="Spellcasting Ability" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_SPELLCASTING_ABILITY">
+		<sheet display="false" />
+			<description>
+				<p>
+					Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.
+
+				</p>
+				<p>
+					<em>Spell save DC</em> = 8 + your proficiency bonus + your Intelligence modifier
+					<em>Spell attack modifier</em> = your proficiency bonus + your Intelligence modifier
+
+				</p>
+			</description>
+		
+	</element>
+
+	<element name="Tricks of the Trade" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_TRICKS">
+		
+			<description>
+				<p>
+					When you choose this archetype at 3rd level, you learn how to recognize signs of spellcasting. You have advantage on Survival checks to track foes capable of innate spellcasting or possessing one spell slot or more, as well as on Investigation checks to identify any arcane focuses, spellbooks, or phylacteries they may possess.  Additionally, you learn one exotic language, such as Abyssal, Celestial, or Deep Speech.
+
+				</p>
+			</description>
+		<sheet display="true">
+			<description>
+				<p>
+					You have advantage on Survival checks to track foes capable of innate spellcasting or possessing one spell slot or more, as well as on Investigation checks to identify any arcane focuses, spellbooks, or phylacteries they may possess.
+
+				</p>
+			</description>
 		</sheet>
+	</element>
+
+	<element name="Quick Reflexes" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_REFLEXES">
+		<sheet display="true">
+			<description>
+				<p>
+					You may cast the <strong>Monterosso’s Mirror</strong> cantrip as a bonus action.
+
+
+				</p>
+			</description>
+		</sheet>
+		<description>
+			<p>
+				A slow Mage Hunter is a dead Mage Hunter. At 7th level, you gain the ability to cast the Monterosso’s Mirror cantrip as a bonus action.
+
+
+			</p>
+		</description>
+		
+	</element>
+
+	<element name="Keen Eye" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_KEENEYE">
+		<sheet display="true">
+			<description>
+				<p>
+					You have advantage on seeing through the effects of illusion magic, and cannot be charmed, blinded or deafened by magical means.
+
+				</p>
+			</description>
+		</sheet>
+		<description>
+			<p>
+				At level 10, you are able to bypass your target’s trickery. You have advantage on seeing through the effects of illusion magic, and cannot be charmed, blinded or deafened by magical means.
+
+			</p>
+		</description>
+		
+	</element>
+
+	<element name="Obstinate Response" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_OBSTINATE">
+		<sheet display="true">
+			<description>
+				<p>
+					You can cast counterspell at 3rd level without expending a spell slot a number of times equal to your Constitution modifier.
+
+				</p>
+			</description>
+		</sheet>
+			<description>
+				<p>
+					At level 15, you learn the secrets of intercepting your foe’s magic. You can now cast counterspell at 3rd level without expending a spell slot a number of times equal to your Constitution modifier.
+
+				</p>
+			</description>
+	
+	</element>
+
+	<element name="Level Playing Field" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_PLAYINGFIELD">
+		<sheet display="true">
+			<description>
+				<p>
+					You can cast dispel magic at 3rd level without expending a spell slot a number of times equal to your Constitution modifier. When you score a critical hit on a ranged or melee weapon attack, you may burn one of your target’s spell slots. This spell slot must be 3rd level or lower.
+				</p>
+			</description>
+		</sheet>
+		<description>
+			<p>
+				By level 18, you have little patience for your spell-flinging quarry. You can now cast dispel magic at 3rd level without expending a spell slot a number of times equal to your Constitution modifier. Additionally, when you score a critical hit on a ranged or melee weapon attack, you may burn one of your target’s spell slots. This spell slot must be 3rd level or lower.
+			</p>
+		</description>
 		<rules>
-			<grant type="Spell" id="ID_SEA_SPELL_FASCINATE" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_SEA_SPELL_INFURIATE" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_SEA_SPELL_MIND_VIRUS" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_SEA_SPELL_MIGRAINE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="18" spellcasting="Wizard" prepared="true" />
 		</rules>
 	</element>
 
-	<element name="Thought Domain Features" type="Archetype Feature" source="POHEAD" id="ID_SEA_DOMAIN_FEATURES">
-		<description>
-			<table>
-				<thead>
-					<tr>
-						<td>Cleric Level</td>
-						<td>Spells</td>
-					</tr>
-				</thead>
-				<tr>
-					<td>1st</td>
-					<td>
-						<em>Domain Spells, Total Recall, Psionic Potential</em>
-					</td>
-				</tr>
-				<tr>
-					<td>2nd</td>
-					<td>
-						<em>Channel Divinity: Psychic Symbiote</em>
-					</td>
-				</tr>
-				<tr>
-					<td>6th</td>
-					<td>
-						<em>Eerie Precision</em>
-					</td>
-				</tr>
-				<tr>
-					<td>8th</td>
-					<td>
-						<em>Psychic Disruption</em>
-					</td>
-				</tr>
-				<tr>
-					<td>17th</td>
-					<td>
-						<em>Transcendent Intellect</em>
-					</td>
-				</tr>
-			</table>
-		</description>
-	</element>
 
-	<element name="Thought Domain Spells" type="Archetype Feature" source="Sealight" id="ID_SEA_DOMAIN_SPELLS">
-		<description>
-			<table>
-				<thead>
-					<tr>
-						<td>Cleric Level</td>
-						<td>Spells</td>
-					</tr>
-				</thead>
-				<tr>
-					<td>1st</td>
-					<td>
-						<em>
-							Fascinate, Infuriate
-						</em>
-					</td>
-				</tr>
-				<tr>
-					<td>3rd</td>
-					<td>
-						<em>
-							Detect Thoughts, Mind Virus
-						</em>
-					</td>
-				</tr>
-				<tr>
-					<td>5th</td>
-					<td>
-						<em>Fear, Hypnotic Pattern</em>
-					</td>
-				</tr>
-				<tr>
-					<td>7th</td>
-					<td>
-						<em>Confusion, Phantasmal Killer</em>
-					</td>
-				</tr>
-				<tr>
-					<td>17th</td>
-					<td>
-						<em>Dominate Person, Modify Memory</em>
-					</td>
-				</tr>
-			</table>
-		</description>
-		<rules>
-			<grant type="Spell" id="ID_SEA_SPELL_FASCINATE" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_SEA_SPELL_INFURIATE" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_SEA_SPELL_MIND_VIRUS" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_SEA_SPELL_MIGRAINE" level="1" spellcasting="Cleric" prepared="true" />
-
-		</rules>
-	</element>
-
-	<element name="Total Recall" type="Archetype Feature" source="Sealight" id="ID_SEA_TOTAL_RECALL">
-		<description>
-			<p>	Beginning at 1st level, you know a variety of mnemonic devices to trigger your brain’s near mechanical precision. If you spend at least one minute performing a chant, ritual, or prayer, you may give yourself advantage on History, Arcana, and Perception checks for the next ten minutes. You may do this a number of times equal to your Intelligence modifier.</p>
-		</description>
-		<sheet display="true">
-			<description>
-				Beginning at 1st level, you know a variety of mnemonic devices to trigger your brain’s near mechanical precision. If you spend at least one minute performing a chant, ritual, or prayer, you may give yourself advantage on History, Arcana, and Perception checks for the next ten minutes. You may do this a number of times equal to your Intelligence modifier.
-			</description>
-		</sheet>
-	</element>
-	<element name="Psionic Conduit" type="Archetype Feature" source="Sealight" id="ID_SEA_PSI_CON">
-		<description>
-			<p>
-				Also at 1st level, your knowledge of the living mind allows you to unlock its hidden potential. As a bonus action, you may use the mind of one willing creature within 30 feet of you as your holy symbol, so long as the creature has an Intelligence score of 7 or higher. This creature becomes your Conduit, and as long as they are being used in this manner, you have access to the migraine cantrip. Additionally, you are able to communicate telepathically with your Conduit as a bonus action on your turns. This connection is broken if the Conduit is reduced to 0 Hit Points or moves more than 60 feet away from you. Once the connection is broken, you must spend a bonus action reestablishing it.
-			</p>
-		</description>
-		<sheet display="true">
-			<description>
-				Also at 1st level, your knowledge of the living mind allows you to unlock its hidden potential. As a bonus action, you may use the mind of one willing creature within 30 feet of you as your holy symbol, so long as the creature has an Intelligence score of 7 or higher. This creature becomes your Conduit, and as long as they are being used in this manner, you have access to the migraine cantrip. Additionally, you are able to communicate telepathically with your Conduit as a bonus action on your turns. This connection is broken if the Conduit is reduced to 0 Hit Points or moves more than 60 feet away from you. Once the connection is broken, you must spend a bonus action reestablishing it.
-			</description>
-		</sheet>
-	</element>
-
-	<element name="Channel Divinity: Psychic Symbiote" type="Archetype Feature" source="Sealight" id="ID_SEA_PSY_SYM">
-		<description>
-			<p>
-				Starting at 2nd level, you can use your Channel	Divinity to weaponize the minds of your allies. As an action, you access the mind your Conduit. For one minute, both you and your Conduit have advantage on	all Wisdom and Charisma saving throws. Additionally, any hostile creature that begins its turn within 10 feet of either you or your Conduit must succeed on a Constitution saving throw or take 1d10 psychic damage.
-			</p>
-		</description>
-		<sheet display="true">
-			<description>
-				Starting at 2nd level, you can use your Channel	Divinity to weaponize the minds of your allies. As an action, you access the mind your Conduit. For one minute, both you and your Conduit have advantage on	all Wisdom and Charisma saving throws. Additionally, any hostile creature that begins its turn within 10 feet of either you or your Conduit must succeed on a Constitution saving throw or take 1d10 psychic damage.
-			</description>
-		</sheet>
-	</element>
-
-	<element name="Eerie Precision" type="Archetype Feature" source="Sealight" id="ID_SEA_EERIE_PRECISION">
-		<description>
-			<p>
-				Starting at 6th level, your enhanced psychic perception allows you to target and destroy specific parts of your foes’ ego. Before you make a spell attack that deals psychic damage, you can choose to take a -5 penalty to the attack roll If the attack hits, you add +10 to the attack’s damage. You can do this a number of times equal to your Wisdom modifier. You regain all expended uses of this feature after a long rest.
-			</p>
-		</description>
-		<sheet display="true">
-			<description>
-				Starting at 6th level, your enhanced psychic perception allows you to target and destroy specific parts of your foes’ ego. Before you make a spell attack that deals psychic damage, you can choose to take a -5 penalty to the attack roll If the attack hits, you add +10 to the attack’s damage. You can do this a number of times equal to your Wisdom modifier. You regain all expended uses of this feature after a long rest.
-			</description>
-		</sheet>
-	</element>
-
-	<element name="Psychic Disruption" type="Archetype Feature" source="Sealight" id="ID_SEA_PSY_DIS">
-		<description>
-			<p>	By 8th level, your psionic powers are such that you emit a constant psychic ambience that can be uncomfortable to be near. When a creature within 10 feet of you has to make a Wisdom saving throw, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the roll. Additionally, if the spell or effect that caused the Wisdom saving throw is created by a spell you cast, you	can also choose to deal an additional 1d8 psychic damage to the target, immediately before the target makes its saving throw. Once you use this feature, you cannot use it again until you finish a long or short rest.</p>
-		</description>
-		<sheet display="true">
-			<description>
-				By 8th level, your psionic powers are such that you emit a constant psychic ambience that can be uncomfortable to be near. When a creature within 10 feet of you has to make a Wisdom saving throw, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the roll. Additionally, if the spell or effect that caused the Wisdom saving throw is created by a spell you cast, you	can also choose to deal an additional 1d8 psychic damage to the target, immediately before the target makes its saving throw. Once you use this feature, you cannot use it again until you finish a long or short rest.
-			</description>
-		</sheet>
-	</element>
-
-	<element name="Transcendental Intellect" type="Archetype Feature" source="Sealight" id="ID_TRANS_INT">
-		<description>
-			<p>
-				By 17th level, you have gained total control over both mind and body. You can now hover up to 20 feet above the ground, and have advantage on saving throws that would cause you to gain exhaustion on a failed save. Additionally, you are now able to maintain up to two Conduits at a time When you are connected to two Conduits, you gain the ability to cast <em>migraine</em> as a bonus action on your turn on any creature within range of one	of your Conduits.
-			</p>
-		</description>
-		<sheet display="true">
-			<description>
-				By 17th level, you have gained total control over both mind and body. You can now hover up to 20 feet above the ground, and have advantage on saving throws that would cause you to gain exhaustion on a failed save. Additionally, you are now able to maintain up to two Conduits at a time When you are connected to two Conduits, you gain the ability to cast <em>migraine</em> as a bonus action on your turn on any creature within range of one	of your Conduits
-			</description>
-		</sheet>
-	</element>
+	
 </elements>
 
 
