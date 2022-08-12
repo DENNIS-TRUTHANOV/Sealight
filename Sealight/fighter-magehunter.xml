@@ -9,6 +9,7 @@
 		</update>
 	</info>
 	<element name="Mage Hunter" type="Archetype" source="Sealight" id="ID_SEA_MAGEHUNTER">
+		<sheet display="false" />
 		<supports>Martial Archetype</supports>
 		<description>
 			<p>While magic is common in Sealight, it is not universal. To your average citizen, few things are more frightening than a maniac wielding a fireball, or a necromancer defiling graves and communing with 
@@ -31,17 +32,17 @@ the departed. This is where the Monterosso Mage Hunter’s Guild comes in: haili
 			<description>IDFKA</description>
 		
 		<rules>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_FEATURES" level="3"/>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING" level="3"/>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING_SUB" level="7"/>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_CANTRIPS" level="10"/>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLS" level="15"/>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_TRICKS" level="18"/>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_REFLEXES" level="18"/>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_KEENEYE" level="18"/>
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_OBSTINATE" level="18"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_FEATURES" level="1"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING" level="1"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING_SUB" level="3"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_CANTRIPS" level="1"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLS" level="1"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_TRICKS" level="3"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_REFLEXES" level="7"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_KEENEYE" level="10"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_OBSTINATE" level="15"/>
 			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_PLAYINGFIELD" level="18"/>			
-			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING_ABILITY" level="18"/>
+			<grant type="Archetype Feature" id="ID_SEA_MAGEHUNTER_SPELLCASTING_ABILITY" level="1"/>
 		</rules>
 		</element>
 
@@ -288,6 +289,7 @@ the departed. This is where the Monterosso Mage Hunter’s Guild comes in: haili
 			<description>
 				<p>You learn two cantrips of your choice from the wizard spell list. You learn an additional cantrip of your choice at 10th level.</p>
 			</description>
+
 		
 	</element>
 	<element name="Spells Known of 1st Level and Higher" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_SPELLS">
@@ -299,14 +301,45 @@ the departed. This is where the Monterosso Mage Hunter’s Guild comes in: haili
 					Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from the evocation or transmutation schools.
 				</p>
 			</description>
-	
+		<spellcasting name="Mage Hunter" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>Wizard,(Abjuration||Evocation||Transmutation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="Mage Hunter:spellcasting:slots:1" value="2" level="3" />
+			<stat name="Mage Hunter:spellcasting:slots:2" value="2" level="7" />
+			<stat name="Mage Hunter:spellcasting:slots:1" value="1" level="8" />
+			<stat name="Mage Hunter:spellcasting:slots:2" value="1" level="10" />
+			<stat name="Mage Hunter:spellcasting:slots:3" value="2" level="13" />
+			<stat name="Mage Hunter:spellcasting:slots:1" value="1" level="15" />
+			<stat name="Mage Hunter:spellcasting:slots:3" value="1" level="16" />
+			<stat name="Mage Hunter:spellcasting:slots:1" value="1" level="19" />
+			<stat name="Mage Hunter:spellcasting:slots:2" value="1" level="20" />
+			<select type="Spell" name="Cantrip (Mage Hunter)" supports="Wizard, 0" level="3" number="2" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Cantrip (Mage Hunter)" supports="Wizard, 0" level="10" number="1" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration), $(spellcasting:slots)" level="3" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration), $(spellcasting:slots)" level="3" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration), $(spellcasting:slots)" level="4" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration), $(spellcasting:slots)" level="7" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration||Evocation||Transmutation), $(spellcasting:slots)" level="8" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration), $(spellcasting:slots)" level="10" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration), $(spellcasting:slots)" level="11" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration), $(spellcasting:slots)" level="13" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration||Evocation||Transmutation), $(spellcasting:slots)" level="14" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration), $(spellcasting:slots)" level="16" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration), $(spellcasting:slots)" level="18" spellcasting="Mage Hunter" />
+			<select type="Spell" name="Spellcasting (Mage Hunter)" supports="(Abjuration||Evocation||Transmutation), $(spellcasting:slots)" level="20" spellcasting="Mage Hunter" />
+
+				
+
+
+		</rules>
 		
-		
-		
+
 	</element>
 
-	<element name="Spellcasting Ability" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_SPELLCASTING_ABILITY">
-		<sheet display="false" />
+	<element name="Spellcasting Ability" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_SPELLCASTING_ABILITY" requirements="ID_INTERNAL_GRANT_MULTICLASS">
+		<sheet display="false">
 			<description>
 				<p>
 					Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.
@@ -318,7 +351,15 @@ the departed. This is where the Monterosso Mage Hunter’s Guild comes in: haili
 
 				</p>
 			</description>
-		
+		</sheet>
+			<description>
+				<p>Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+				<p>
+					<em>Spell save DC</em> = 8 + your proficiency bonus + your Intelligence modifier
+					<em>Spell attack modifier</em> = your proficiency bonus + your Intelligence modifier
+				</p>
+			</description>
+			
 	</element>
 
 	<element name="Tricks of the Trade" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_TRICKS">
@@ -356,7 +397,9 @@ the departed. This is where the Monterosso Mage Hunter’s Guild comes in: haili
 
 			</p>
 		</description>
-		
+		<rules>
+			<grant type="Spell" id="ID_SEA_SPELL_MONTEROSSO" level="7" spellcasting="Cleric" prepared="true" />
+		</rules>
 	</element>
 
 	<element name="Keen Eye" type="Archetype Feature" source="Sealight" id="ID_SEA_MAGEHUNTER_KEENEYE">
