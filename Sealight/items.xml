@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items from Sealight</name>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/DENNIS-TRUTHANOV/Sealight/main/Sealight/items.xml" />
+		</update>
+	</info>
+
+	<!--Magic Items-->
+	<element name="Spirit Study" type="Magic Item" source="Sealight" id="ID_SEA_SPIRITSTUDY">
+		<description>
+			<p class="indent">The College of Haruspex utilise the undying for many things, including information storage. Executed criminals with no known next of kin are often “to the College to serve as Spirit Studies repositories of arcane information, stored in the pickled, still whispering head of the deceased. Acting as unwilling libraries, Spirit Studies are an invaluable resource for spellcasters however, occasionally the original occupant’s spirit will attempt to exert its will over the user, pushing them to acts of cruelty.</p>
+			<p class="indent">The Study constantly whispers the secrets to casting the following spells:<em> optography compelled duel, animate dead, animate appendage, gift of gab, and mind spike</em>.While attuned to the Spirit Study, you can use it as a +1 spellcasting focus for your spells, and you know the <em>mage hand</em> and <em>vicious mockery</em> cantrips if you don't already know them.</p>
+			<p class="indent">Furthermore, the Study has 3 charges, and it regains 1d3 expended charges daily at dawn. If you spend 1 minute listening to the Study's whispers, you can expend 1 charge to replace one of your prepared spells with a spell known by the head.</p>
+			<p class="indent"><em>Curse.</em> Whenever a spell attack made with this artefact misses, or if the target succeeds on the requisite saving throw, the whispers become more frantic. The spellcaster must make a DC 16 Wisdom saving throw. On a failed save, the spellcaster is compelled to commit an ignoble act, such as cheating during a fair competition, lying to a close friend or loved one, stealing an item from a poor shopkeeper, or causing minor harm to an innocent.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="weight" lb="2"></set>
+		</setters>
+	
+	</element>
+</elements>
