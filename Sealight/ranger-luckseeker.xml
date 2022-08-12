@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Luckseeker</name>
+		<description>The Luckseeker subclass from LP Mills' Sealight</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-everything">Sealight</author>
+		<update version="0.0.2">
+			<file name="ranger-luckseeker" url="https://raw.githubusercontent.com/DENNIS-TRUTHANOV/Sealight/main/Sealight/ranger-luckseeker" />
+		</update>
+	</info>
+	<element name="Luckseeker" type="Archetype" source="Sealight" id="ID_SEA_LUCKSEEKER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>
+				Luck is a tricky thing. Treatises have been written on the fickle role fate plays in our lives, abandoning us in our hours of need, only to surprise us with good fortune seemingly out of nowhere. The Luckseeker does not have this problem.
+				The Luckseeker is an especially strange type of adventurer. Through unknown means, the Luckseeker has entered an unspoken agreement with the universe. For the Luckseeker fate is an ever-present ally, granting them boons on a whim and ensuring that they always have the exact right tool for the job. The Luckseeker never gets lost: should they not know their current whereabouts, they will almost certainly find something to justify their accidental detour. Often a Luckseeker will stumble into riches, and lose them just as easily with a knowing smile and a shrug. Whenever a Luckseeker does not know a spell, cantrip, or enchantment that will grease their proverbial wheels, they may simply toss a coin into the ether and be gifted by the universe with the spell they desire.</p>
+			<div element="ID_SEA_RANGERFEATURES" />
+			<div element="ID_SEA_BONUSPROFICIENCIES" />
+			<div element="ID_SEA_LUCKSEEKERMAGIC" />
+			<div element="ID_SEA_LUCKSEEKER SPELLS" />
+			<div element="ID_SEA_DETECTORIST" />
+			<div element="ID_SEA_EXCHANGERATE" />
+			<div element="ID_SEA_DOUBLETAKE" />
+			<div element="ID_SEA_DEUSEXMACHINA" />
+
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SEA_RANGERFEATURES" level="1" />
+			<grant type="Archetype Feature" id="ID_SEA_BONUSPROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_SEA_LUCKSEEKERMAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_SEA_LUCKSEEKER SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_SEA_EXCHANGERATE" level="7" />
+			<grant type="Archetype Feature" id="ID_SEA_DETECTORIST" level="3" />
+			<grant type="Archetype Feature" id="ID_SEA_DOUBLETAKE" level="11" />
+			<grant type="Archetype Feature" id="ID_SEA_DEUSEXMACHINA" level="15" />
+		</rules>
+	</element>
+	<element name="Ranger Features" type="Archetype Feature" source="Sealight" id="ID_SEA_RANGERFEATURES">
+		<description>
+			<table>
+				<thead>
+					<tr>
+						<td>Ranger Level</td>
+						<td>Feature</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>3</td>
+					<td>
+						Bonus Proficiencies, Luckseeker Magic, Detectorist
+					</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Exchange Rate</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>Double Take</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>Deus Ex Machina</td>
+				</tr>
+			</table>
+		</description>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Sealight" id="ID_SEA_BONUSPROFICIENCIES">
+		<description>
+			<p>Starting at 3rd level when you join this conclave, you gain proficiency with Sleight of Hand. Additionally, you may use a gaming set, cheat’s kit, or nonmagical trinket as your spellcasting focus.
+			</p>
+			</description>
+
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			
+		</rules>
+	</element>
+
+
+
+	<element name="Luckseeker Magic" type="Archetype Feature" source="Sealight" id="ID_SEA_LUCKSEEKERMAGIC">
+		<description>
+			<table>
+				<thead>
+					<tr>
+						<td>Spells</td>
+						<td>Feature</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>3rd</td>
+					<td>
+						Bless
+					</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>Hyperfocus</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>Savoir Faire</td>
+				</tr>
+				<tr>
+					<td>13th</td>
+					<td>Divination</td>
+				</tr>
+				<tr>
+					<td>17th</td>
+					<td>Geas</td>
+				</tr>
+			</table>
+		</description>
+	</element>
+	
+	
+	<element name="Detectorist" type="Archetype Feature" source="Sealight" id="ID_SEA_DETECTORIST">
+		<description>
+			<p>	Also at 3rd level, your luck always seems to deliver exactly what you were looking for, just as you were looking for it. As a bonus action, you can reach into a container and produce a tool, simple weapon, or nonmagical item worth less than 15gp. You can use this ability a number of times equal to your Wisdom bonus (minimum 1). You regain all expended uses of this feature after a long rest.
+				Additionally, whenever you find money during your travels, you can increase the amount you find by 1gp per Ranger level.
+
+
+			</p>
+		</description>
+
+
+	</element>
+
+	<element name="Exchange Rate" type="Archetype Feature" source="Sealight" id="ID_SEA_EXCHANGERATE">
+		<description>
+			<p>
+				At level 7, you learn how to bargain with the cosmos to get what you need. You can attempt to cast to cast a spell that you do not know or have prepared. The spell you choose can be from any spell list and must be of a level for which you have a spell slot, and you must provide 10gp per spell level. To do so, place the required amount of money (minimum of 10gp) on the nearest flat surface and turn away from it. While unobserved, the money will disappear into the ether, and you will have access to the chosen spell until the end of your next long rest. You can only gain access to one spell with this method at a time. If the money is intercepted before it can be taken by the cosmos, you will not gain access to the chosen spell, and you cannot use this feat until the end of your next long rest as punishment from the universe.
+
+
+			</p>
+		</description>
+
+
+	</element>
+
+	<element name="Double Take" type="Archetype Feature" source="Sealight" id="ID_SEA_DOUBLETAKE">
+		<description>
+			<p>By 11th level, your dalliances with luck seem to become contagious. When another creature you can see makes an attack roll, an ability check, or a saving throw, you may roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature's roll. You can do so after the creature rolls but before any effects of the roll occur. You can use this ability a number of times equal to your proficiency bonus. You regain all expended uses of this feature after a long rest.
+
+
+
+			</p>
+		</description>
+
+
+	</element>
+
+	<element name="Deus Ex Machina" type="Archetype Feature" source="Sealight" id="ID_SEA_DEUSEXMACHINA">
+		<description>
+			<p>	By 15th level, the universe has your back. Whenever you are reduced to 0 Hit Points, you may choose to be reduced to 1 Hit Point instead. Additionally, if you were reduced to 0 Hit Points by a creature, that creature is suddenly beset by calamity, such as being struck by a piece of mysterious falling debris or falling into a hole they did not see moments before. The creature takes 5d10 bludgeoning damage and be knocked prone. Once you use this feature, you cannot use it again until you have finished a short or long rest.
+
+
+
+			</p>
+		</description>
+
+
+	</element>
+</elements>
